@@ -17,7 +17,7 @@
                     <th>Nome do Veiculo</th>
                     <th>Tipo de Veiculo</th>
                     <th>Ano</th>
-                    <th>Ação</th> 
+                    <th>Ações</th> 
                 </tr>
             </thead>
             <tbody>

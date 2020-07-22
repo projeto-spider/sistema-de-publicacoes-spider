@@ -2,6 +2,7 @@
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" style="color: #F5F5F5;">SPIDER</a>
+      <div v-if="currentUser">
       <div class="navbar-nav mr-auto">
 <!--
         <li class="nav-item">
@@ -58,7 +59,7 @@
       <li class="nav-item">
           <router-link to="/reproved-publications" class="nav-link">Artigos Reprovados</router-link>
       </li>
-
+      </div>
       </div>
 
       <div v-if="!currentUser" class="navbar-nav ml-auto">
@@ -74,7 +75,14 @@
         </li>
       </div>
 
+     
+      
       <div v-if="currentUser" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/projeto-spider/sistema-de-publicacoes-spider/raw/master/Manual%20do%20Usuario%20-%20SISTEMA%20DE%20PUBLICACOES%20SPIDER.doc">
+            <font-awesome-icon icon="question-circle" size="1g" /> Tutorial da Ferramenta
+          </a>
+        </li>
         <li class="nav-item">
           <router-link to="/profile" class="nav-link">
             <font-awesome-icon icon="user" />
